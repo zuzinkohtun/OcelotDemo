@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User/GetUserList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5205
+        }
+      ],
+      "UpstreamPathTemplate": "/UserList",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/GetProductList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ],
+      "UpstreamPathTemplate": "/ProductList",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
